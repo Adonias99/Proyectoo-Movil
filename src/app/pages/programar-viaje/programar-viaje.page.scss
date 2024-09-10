@@ -1,0 +1,72 @@
+.titulo {
+  color: #edb232; /* Color amarillo */
+  font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-button {
+  --background: #edb232; /* Amarillo */
+  --color: white;
+}
+
+.container h2 {
+  color: #edb232; /* Amarillo */
+}
+
+.container h1 {
+  color: white;
+}
+
+.container {
+  --background: blue; /* Fondo azul */
+}
+
+ion-content {
+  --background: #083d85; /* Azul oscuro */
+}
+
+.container p {
+  color: white;
+}
+
+ion-title {
+  color: #edb232; /* Amarillo */
+  background-color: #4e74a7; /* Azul */
+  height: 55px;
+  border-color: #4e74a7; /* Azul */
+}
+
+ion-menu-button {
+  background-color: #4e74a7; /* Azul */
+  height: 55px;
+  width: 80px;
+  color: aliceblue;
+}
+
+.menu {
+  background-color: #083d85; /* Azul oscuro */
+}

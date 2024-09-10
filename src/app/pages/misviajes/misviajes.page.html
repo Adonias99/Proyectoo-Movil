@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver Atrás"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class = 'container'>
+  <ion-list>
+    <ion-item *ngFor="let viaje of viajes">
+      <ion-label>
+        <h2>Destino: {{ viaje.destino }}</h2>
+        <p>Capacidad: {{ viaje.capacidad }} personas</p>
+        <p>Precio: {{ viaje.precio | number:'1.0-0' }} CLP</p>
+        <p>Hora de Salida: {{ viaje.hora }}</p>
+        <p>Lugar de Encuentro: {{ viaje.encuentro }}</p>
+        <p>Estado: {{ viaje.estado }}</p>
+      </ion-label>
+      
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>

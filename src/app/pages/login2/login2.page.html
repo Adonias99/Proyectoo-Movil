@@ -1,0 +1,42 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<ion-header [translucent]="true">
+  <ion-toolbar style="text-align: center;">
+      <ion-buttons slot="start">
+        <ion-back-button text="Volver Atrás"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Login TellevoApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img src="../../../assets/img/car.png" alt="car" class="car-img">
+    </div>
+    <div class="titulo">
+      <h1>Tellevo</h1>
+      <h2>APP</h2>
+    </div>
+  <div class="formulario">
+      <ion-item>
+        <ion-input [(ngModel)]="usuario" label="Nombre de Usuario" 
+        label-placement="floating" 
+        fill="outline" 
+        placeholder="Ingrese nombre de usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="contrasena" label="Contraseña" 
+        label-placement="floating" 
+        fill="outline" 
+        type="password"
+        placeholder="Ingrese contraseña"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-button (click)="validar()">Ingresar</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="restablecer()">Restablecer Contraseña</ion-button>
+      </ion-item>
+  </div>
+</ion-content>

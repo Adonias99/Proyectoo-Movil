@@ -1,0 +1,77 @@
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <div class="menu">
+      <ion-title>Menu</ion-title>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+      <ion-button (click)="cerrar_sesion()">Cerrar Sesion</ion-button>
+    </div>
+    </ion-toolbar>
+  
+  </ion-header>
+  <ion-content class="ion-padding"></ion-content>
+</ion-menu>
+
+
+
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bienvenido {{usuario}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding" id="main-content">
+    <div class="container">
+      <h1>"PASAJERO"</h1>
+      <img src="../../../assets/img/car.png" alt="car" class="car-img">
+      <br>
+      <p>Para Ver tus viaje haz clic en "Buscar Viaje"</p>
+      <ion-button (click)="buscar()" expand="block">Buscar Viaje</ion-button>
+      <br>
+      <p>Para ver tus viajes programados haz clic en "Lista de Viajes"</p>
+      <ion-button (click)="listaviaje()"expand="block">Lista de Viajes</ion-button>
+      <br>
+      <p>Para cancelar tu viaje haz clic en "Cancelar Viaje"</p>
+      <ion-button (click)="cancelarviaje()" expand="block">Cancelar Viaje</ion-button>
+    </div>
+  </ion-content>
+</ion-app>
