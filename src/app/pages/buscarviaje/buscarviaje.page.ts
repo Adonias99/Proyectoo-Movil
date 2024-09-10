@@ -41,4 +41,7 @@ export class BuscarviajePage implements OnInit {
       this.navCtrl.navigateForward(['/detalles-viaje', { destino: viaje.destino, hora: viaje.hora }]);
     }
   }
+  qr(){
+    this.navCtrl.navigateForward(['/qr'])
+  }
 }
