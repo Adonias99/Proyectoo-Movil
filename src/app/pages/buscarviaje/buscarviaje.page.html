@@ -25,6 +25,7 @@
           *ngIf="viaje.capacidad === 0 || viaje.estado === 'Vehículo lleno'"
           expand="block" 
           disabled>Viaje Completo</ion-button>
+          <ion-button (click)="qr()">Ver QR</ion-button>
       </ion-label>
     </ion-item>
   </ion-list>
